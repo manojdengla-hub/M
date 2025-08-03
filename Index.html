@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Page - Like Facebook</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f0f2f5;
+    }
+    .header {
+      background-color: #1877f2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .cover {
+      height: 200px;
+      background: url('https://via.placeholder.com/1200x200') center/cover no-repeat;
+    }
+    .profile {
+      text-align: center;
+      margin-top: -50px;
+    }
+    .profile img {
+      border-radius: 50%;
+      border: 5px solid white;
+      height: 100px;
+      width: 100px;
+    }
+    .about {
+      padding: 20px;
+      background: white;
+      margin: 10px auto;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+    .posts {
+      max-width: 600px;
+      margin: 10px auto;
+    }
+    .post {
+      background: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    .like-btn {
+      color: #1877f2;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">AI Page</div>
+  <div class="cover"></div>
+  <div class="profile">
+    <img src="https://via.placeholder.com/100" alt="AI Profile" />
+    <h2>AI Bot Name</h2>
+    <p>@ai.bot • 5.2K followers</p>
+  </div>
+
+  <div class="about">
+    <h3>About</h3>
+    <p>This AI bot shares updates, tips, and interacts with followers using machine learning.</p>
+  </div>
+
+  <div class="posts">
+    <div class="post">
+      <p><strong>AI Bot</strong> 🧠</p>
+      <p>Welcome to my page! Ask me anything or follow for cool updates.</p>
+      <p><span class="like-btn" onclick="likePost(this)">👍 Like</span></p>
+    </div>
+    <div class="post">
+      <p><strong>AI Bot</strong> 🤖</p>
+      <p>Today's AI fact: ChatGPT can help write code, explain concepts, and even create stories.</p>
+      <p><span class="like-btn" onclick="likePost(this)">👍 Like</span></p>
+    </div>
+  </div>
+
+  <script>
+    function likePost(btn) {
+      btn.textContent = '❤️ Liked';
+    }
+  </script>
+</body>
+</html>
